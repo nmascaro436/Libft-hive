@@ -49,7 +49,7 @@ static size_t	ft_wordlen(char const *s, char c)
 
 static char	**ft_free(char **array)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	if (array == NULL)
@@ -98,5 +98,5 @@ char	**ft_split(char const *s, char c)
 	result = (char **) malloc((words + 1) * sizeof(*result));
 	if (!result)
 		return (NULL);
-	return (ft_write_words(result, words, s, c));
+	return (ft_words(result, words, s, c));
 }
