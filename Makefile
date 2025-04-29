@@ -6,7 +6,7 @@
 #    By: nmascaro <nmascaro@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/15 11:11:48 by nmascaro          #+#    #+#              #
-#    Updated: 2025/04/15 11:21:36 by nmascaro         ###   ########.fr        #
+#    Updated: 2025/04/29 09:39:42 by nmascaro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 NAME = libft.a
@@ -21,7 +21,7 @@ $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS) 
 
 .c.o:
-	$(CC) $(CFLAGS) -c $< -o $@ 
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	@rm -f *.o
