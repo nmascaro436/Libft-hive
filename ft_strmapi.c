@@ -22,6 +22,10 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	if (!result)
 		return (NULL);
 	i = 0;
+	if (!s)
+		return (ft_strdup(""));
+	else if (!f)
+		return (ft_strdup(s));
 	while (i < len)
 	{
 		result[i] = f(i, s[i]);
